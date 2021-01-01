@@ -1,0 +1,13 @@
+{
+  "source": "/home/jose/test/source/",
+  "rules": [
+    {
+      "extensions": ["png", "jpeg"],
+      "moveTo": "/home/jose/test/images/"
+    },
+    {
+      "extensions": ["mobi", "epub"],
+      "moveTo": "/home/jose/test/books/"
+    }
+  ]
+}
