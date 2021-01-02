@@ -2,6 +2,14 @@
   "source": "/home/jose/test/source/",
   "rules": [
     {
+      "regex": ".*music.*",
+      "moveTo": "/home/jose/test/music/"
+    },
+    {
+      "regex": ".*sheet.*",
+      "moveTo": "/home/jose/test/sheets/"
+    },
+    {
       "extensions": ["png", "jpeg"],
       "moveTo": "/home/jose/test/images/"
     },
