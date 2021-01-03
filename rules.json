@@ -1,21 +1,44 @@
-{
-  "source": "/home/jose/test/source/",
-  "rules": [
-    {
-      "regex": ".*music.*",
-      "moveTo": "/home/jose/test/music/"
-    },
-    {
-      "regex": ".*sheet.*",
-      "moveTo": "/home/jose/test/sheets/"
-    },
-    {
-      "extensions": ["png", "jpeg"],
-      "moveTo": "/home/jose/test/images/"
-    },
-    {
-      "extensions": ["mobi", "epub"],
-      "moveTo": "/home/jose/test/books/"
-    }
-  ]
-}
+[
+  {
+    "source": "/home/jose/test/source/",
+    "rules": [
+      {
+        "regex": ".*music.*",
+        "moveTo": "/home/jose/test/music/"
+      },
+      {
+        "regex": ".*sheet.*",
+        "moveTo": "/home/jose/test/sheets/"
+      },
+      {
+        "extensions": ["png", "jpeg"],
+        "moveTo": "/home/jose/test/images/"
+      },
+      {
+        "extensions": ["mobi", "epub"],
+        "moveTo": "/home/jose/test/books/"
+      }
+    ]
+  },
+  {
+    "source": "/home/jose/test/source2/",
+    "rules": [
+      {
+        "regex": ".*music.*",
+        "moveTo": "/home/jose/test/music2/"
+      },
+      {
+        "regex": ".*sheet.*",
+        "moveTo": "/home/jose/test/sheets2/"
+      },
+      {
+        "extensions": ["png", "jpeg"],
+        "moveTo": "/home/jose/test/images2/"
+      },
+      {
+        "extensions": ["mobi", "epub"],
+        "moveTo": "/home/jose/test/books2/"
+      }
+    ]
+  }
+]

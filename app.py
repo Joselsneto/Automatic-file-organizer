@@ -56,10 +56,11 @@ def mapRules(rules):
 
 def fileOrganizer():
   rules = getRules()
-  files = getFiles(rules['source'])
-  extensionRules, regexRules = mapRules(rules)
-  organizeByRegex(files, regexRules, rules['source'])
-  organizeByExtension(files, extensionRules, rules['source'])
+  for r in rules:
+    files = getFiles(r['source'])
+    extensionRules, regexRules = mapRules(r)
+    organizeByRegex(files, regexRules, r['source'])
+    organizeByExtension(files, extensionRules, r['source'])
 
 if __name__ == "__main__":
   while(True):

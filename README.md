@@ -19,19 +19,34 @@ python3 app.py
 To organize the files the way you want, you need to edit the rules on [rules.json.](rules.json)
 
 ```json
-{
-  "source": "/path-to-source/",
-  "rules": [
-    {
-      "regex": "regular-expression",
-      "moveTo": "/path-to-destination/"
-    },
-    {
-      "extensions": ["extension1", "extension2"],
-      "moveTo": "/path-to-destination/"
-    },
-  ]
-}
+[
+  {
+    "source": "/path-to-source/",
+    "rules": [
+      {
+        "regex": "regular-expression",
+        "moveTo": "/path-to-destination/"
+      },
+      {
+        "extensions": ["extension1", "extension2"],
+        "moveTo": "/path-to-destination/"
+      },
+    ]
+  },
+  {
+    "source": "/path-to-source2/",
+    "rules": [
+      {
+        "regex": "regular-expression",
+        "moveTo": "/path-to-destination2/"
+      },
+      {
+        "extensions": ["extension1", "extension2"],
+        "moveTo": "/path-to-destination2/"
+      },
+    ]
+  }
+]
 ```
 
 You can create as many rules as you want, following the example above.
